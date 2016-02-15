@@ -1,0 +1,13 @@
+{
+    "version"    : 1,
+    "title"      : "Sample KyBook Format",
+    "subtitle"   : "Koobmark markup language",
+    "authors"    : [ "Konstantin Bukreev" ],
+    "subject"    : [ "Demo", "KyBook" ],
+    "link"       : "https://github.com/kolyvan/kybookfmt",
+    "rights"     : "Public Domain",
+    "date"       : "2016",
+    "annotation" : "This file is a sample of KyBook Format.",
+    "cover"      : "images/cover.jpg",
+    "creator"    : "Kolyvan",
+}

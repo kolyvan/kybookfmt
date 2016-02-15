@@ -1,0 +1,1090 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F915E6E61C68797600A94F61 /* NSScanner+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915E6E51C68797600A94F61 /* NSScanner+Swift.swift */; };
+		F915E6E81C687F9500A94F61 /* fb2kybook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915E6E71C687F9500A94F61 /* fb2kybook.swift */; };
+		F916F7701C65C84400BDCB45 /* KxGzipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = F916F76E1C65C84400BDCB45 /* KxGzipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F916F7711C65C84400BDCB45 /* KxGzipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = F916F76F1C65C84400BDCB45 /* KxGzipArchive.m */; };
+		F916F7831C65DECB00BDCB45 /* KyBookFmtWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F916F7811C65DECB00BDCB45 /* KyBookFmtWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F916F7841C65DECB00BDCB45 /* KyBookFmtWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F916F7821C65DECB00BDCB45 /* KyBookFmtWriter.m */; };
+		F916F7871C65E40000BDCB45 /* KxTarArchiveWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F916F7851C65E40000BDCB45 /* KxTarArchiveWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F916F7881C65E40000BDCB45 /* KxTarArchiveWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F916F7861C65E40000BDCB45 /* KxTarArchiveWriter.m */; };
+		F917B1BA1C66F085003053B8 /* KyBookFmtUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F917B1B81C66F085003053B8 /* KyBookFmtUtils.h */; };
+		F917B1BB1C66F085003053B8 /* KyBookFmtUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F917B1B91C66F085003053B8 /* KyBookFmtUtils.m */; };
+		F917B1BE1C66FBBA003053B8 /* KxUtarURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F917B1BC1C66FBBA003053B8 /* KxUtarURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B1BF1C66FBBA003053B8 /* KxUtarURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F917B1BD1C66FBBA003053B8 /* KxUtarURLProtocol.m */; };
+		F917B1DB1C670D80003053B8 /* BrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F917B1DA1C670D80003053B8 /* BrowserController.m */; };
+		F917B1F01C67203D003053B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917B1EF1C67203D003053B8 /* main.swift */; };
+		F917B1FF1C6720BA003053B8 /* KyBookFmtKitOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = F917B1FE1C6720BA003053B8 /* KyBookFmtKitOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2041C6720C5003053B8 /* KyBookFmtManifest.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE67261C64C86300C9543A /* KyBookFmtManifest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2051C6720D2003053B8 /* KyBookFmtManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE67271C64C86300C9543A /* KyBookFmtManifest.m */; };
+		F917B2061C6720D2003053B8 /* KyBookFmtItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE670A1C649C2300C9543A /* KyBookFmtItem.m */; };
+		F917B2071C6720D2003053B8 /* KyBookFmtReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE66EC1C64920700C9543A /* KyBookFmtReader.m */; };
+		F917B2081C6720D2003053B8 /* KyBookFmtWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F916F7821C65DECB00BDCB45 /* KyBookFmtWriter.m */; };
+		F917B2091C6720D2003053B8 /* KxTarArchiveReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE671D1C64B8E800C9543A /* KxTarArchiveReader.m */; };
+		F917B20A1C6720D2003053B8 /* KxTarArchiveWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F916F7861C65E40000BDCB45 /* KxTarArchiveWriter.m */; };
+		F917B20B1C6720D2003053B8 /* KxGzipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = F916F76F1C65C84400BDCB45 /* KxGzipArchive.m */; };
+		F917B20C1C6720D2003053B8 /* KxUtarURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F917B1BD1C66FBBA003053B8 /* KxUtarURLProtocol.m */; };
+		F917B20D1C6720D2003053B8 /* KyBookFmtUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F917B1B91C66F085003053B8 /* KyBookFmtUtils.m */; };
+		F917B20E1C6720D6003053B8 /* KyBookFmtUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F917B1B81C66F085003053B8 /* KyBookFmtUtils.h */; };
+		F917B20F1C6720DA003053B8 /* KxUtarURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F917B1BC1C66FBBA003053B8 /* KxUtarURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2101C6720DE003053B8 /* KxGzipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = F916F76E1C65C84400BDCB45 /* KxGzipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2111C6720E5003053B8 /* KxTarArchiveWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F916F7851C65E40000BDCB45 /* KxTarArchiveWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2121C6720E9003053B8 /* KxTarArchiveReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE671C1C64B8E800C9543A /* KxTarArchiveReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2131C6720EE003053B8 /* KyBookFmtWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F916F7811C65DECB00BDCB45 /* KyBookFmtWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2141C6720F2003053B8 /* KyBookFmtReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66EB1C64920700C9543A /* KyBookFmtReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2161C6720FD003053B8 /* KyBookFmtItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE67091C649C2300C9543A /* KyBookFmtItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F917B2171C672107003053B8 /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FE1C6494A200C9543A /* archive.h */; };
+		F917B2181C67210A003053B8 /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FD1C6494A200C9543A /* archive_entry.h */; };
+		F917B21A1C6726B0003053B8 /* libarchive.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F917B2191C6726B0003053B8 /* libarchive.tbd */; };
+		F917B21D1C6726E6003053B8 /* KyBookFmtKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F917B1FC1C6720BA003053B8 /* KyBookFmtKitOSX.framework */; };
+		F917B2201C672A77003053B8 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = F917B21F1C672A77003053B8 /* samples */; };
+		F917B2241C672B8A003053B8 /* sample.tar in CopyFiles */ = {isa = PBXBuildFile; fileRef = F917B2231C672B8A003053B8 /* sample.tar */; };
+		F917B2261C672BD6003053B8 /* fb2package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917B2251C672BD6003053B8 /* fb2package.swift */; };
+		F917B2351C67377D003053B8 /* fb2loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917B2341C67377D003053B8 /* fb2loader.swift */; };
+		F982ED601C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */ = {isa = PBXBuildFile; fileRef = F982ED5E1C6C9A460042F79B /* KoobmarkHtmlRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F982ED611C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */ = {isa = PBXBuildFile; fileRef = F982ED5E1C6C9A460042F79B /* KoobmarkHtmlRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F982ED621C6C9A460042F79B /* KoobmarkHtmlRender.m in Sources */ = {isa = PBXBuildFile; fileRef = F982ED5F1C6C9A460042F79B /* KoobmarkHtmlRender.m */; };
+		F982ED631C6C9A460042F79B /* KoobmarkHtmlRender.m in Sources */ = {isa = PBXBuildFile; fileRef = F982ED5F1C6C9A460042F79B /* KoobmarkHtmlRender.m */; };
+		F9865C491C6DA03400A55CAA /* fb2koobmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9865C481C6DA03400A55CAA /* fb2koobmark.swift */; };
+		F9865C581C6DB25300A55CAA /* fb2plaintext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9865C571C6DB25300A55CAA /* fb2plaintext.swift */; };
+		F9865C5A1C6DD97400A55CAA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9865C591C6DD97400A55CAA /* libz.tbd */; };
+		F9865C5C1C6DD97C00A55CAA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9865C5B1C6DD97C00A55CAA /* libz.tbd */; };
+		F9865C771C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9865C751C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9865C781C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9865C751C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9865C791C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9865C761C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m */; };
+		F9865C7A1C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9865C761C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m */; };
+		F9A4DC541C71D2EB0095832A /* KxGzipArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC531C71D2EB0095832A /* KxGzipArchiveTests.m */; };
+		F9A4DC551C71D3660095832A /* sample.km in Resources */ = {isa = PBXBuildFile; fileRef = F9EA4EF61C6B2C1900BB35AE /* sample.km */; };
+		F9A4DC571C71D44A0095832A /* KxTarArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC561C71D44A0095832A /* KxTarArchiveTests.m */; };
+		F9A4DC581C71D4960095832A /* sample.tar in Resources */ = {isa = PBXBuildFile; fileRef = F9FE67071C64999F00C9543A /* sample.tar */; };
+		F9A4DC5B1C71D5D50095832A /* TestsHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC5A1C71D5D50095832A /* TestsHelpers.m */; };
+		F9A4DC601C71DA6C0095832A /* KyBookFmtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC5F1C71DA6C0095832A /* KyBookFmtTests.m */; };
+		F9A4DC621C71DCFE0095832A /* KoobmarkParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC611C71DCFE0095832A /* KoobmarkParserTests.m */; };
+		F9A4DC651C71DDC10095832A /* KoobmarkParserText.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC641C71DDC10095832A /* KoobmarkParserText.m */; };
+		F9A4DC681C71ED9F0095832A /* sample.fb2 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F9A4DC671C71ED740095832A /* sample.fb2 */; };
+		F9A4DC6A1C71F96C0095832A /* KyBookFmtItem_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A4DC661C71ECEF0095832A /* KyBookFmtItem_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F9A4DC6B1C71F96C0095832A /* KyBookFmtItem_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A4DC661C71ECEF0095832A /* KyBookFmtItem_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F9EA4ED51C69BEFC00BB35AE /* fb2utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA4ED41C69BEFC00BB35AE /* fb2utils.swift */; };
+		F9EA4EF21C6B149700BB35AE /* KoobmarkParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F9EA4EF01C6B149700BB35AE /* KoobmarkParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9EA4EF31C6B149700BB35AE /* KoobmarkParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F9EA4EF01C6B149700BB35AE /* KoobmarkParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9EA4EF41C6B149700BB35AE /* KoobmarkParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EA4EF11C6B149700BB35AE /* KoobmarkParser.m */; };
+		F9EA4EF51C6B149700BB35AE /* KoobmarkParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EA4EF11C6B149700BB35AE /* KoobmarkParser.m */; };
+		F9EA4EF71C6B2C1900BB35AE /* sample.km in Resources */ = {isa = PBXBuildFile; fileRef = F9EA4EF61C6B2C1900BB35AE /* sample.km */; };
+		F9EA4EFA1C6B2C7E00BB35AE /* KoobmarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EA4EF91C6B2C7E00BB35AE /* KoobmarkController.m */; };
+		F9FE66B91C6490CD00C9543A /* KyBookFmtKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66B81C6490CD00C9543A /* KyBookFmtKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9FE66C01C6490CD00C9543A /* KyBookFmtKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */; };
+		F9FE66C51C6490CD00C9543A /* KyBookFmtManifestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE66C41C6490CD00C9543A /* KyBookFmtManifestTests.m */; };
+		F9FE66D71C64910E00C9543A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE66D61C64910E00C9543A /* main.m */; };
+		F9FE66DA1C64910E00C9543A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE66D91C64910E00C9543A /* AppDelegate.m */; };
+		F9FE66DD1C64910E00C9543A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE66DC1C64910E00C9543A /* ViewController.m */; };
+		F9FE66E21C64910F00C9543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FE66E11C64910F00C9543A /* Assets.xcassets */; };
+		F9FE66E51C64910F00C9543A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FE66E31C64910F00C9543A /* LaunchScreen.storyboard */; };
+		F9FE66ED1C64920700C9543A /* KyBookFmtReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66EB1C64920700C9543A /* KyBookFmtReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9FE66EE1C64920700C9543A /* KyBookFmtReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE66EC1C64920700C9543A /* KyBookFmtReader.m */; };
+		F9FE66F21C6492D700C9543A /* KyBookFmtKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */; };
+		F9FE66F31C6492D700C9543A /* KyBookFmtKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9FE66FF1C6494A200C9543A /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FD1C6494A200C9543A /* archive_entry.h */; };
+		F9FE67001C6494A200C9543A /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FE1C6494A200C9543A /* archive.h */; };
+		F9FE67051C6497BE00C9543A /* libarchive.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FE67041C6497BE00C9543A /* libarchive.tbd */; };
+		F9FE67081C64999F00C9543A /* sample.tar in Resources */ = {isa = PBXBuildFile; fileRef = F9FE67071C64999F00C9543A /* sample.tar */; };
+		F9FE670B1C649C2300C9543A /* KyBookFmtItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE67091C649C2300C9543A /* KyBookFmtItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9FE670C1C649C2300C9543A /* KyBookFmtItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE670A1C649C2300C9543A /* KyBookFmtItem.m */; };
+		F9FE671E1C64B8E800C9543A /* KxTarArchiveReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE671C1C64B8E800C9543A /* KxTarArchiveReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9FE671F1C64B8E800C9543A /* KxTarArchiveReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE671D1C64B8E800C9543A /* KxTarArchiveReader.m */; };
+		F9FE67281C64C86300C9543A /* KyBookFmtManifest.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE67261C64C86300C9543A /* KyBookFmtManifest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9FE67291C64C86300C9543A /* KyBookFmtManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE67271C64C86300C9543A /* KyBookFmtManifest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F917B21B1C6726E2003053B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9FE66AC1C6490CD00C9543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F917B1FB1C6720BA003053B8;
+			remoteInfo = KyBookFmtKitOSX;
+		};
+		F9FE66C11C6490CD00C9543A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9FE66AC1C6490CD00C9543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9FE66B41C6490CD00C9543A;
+			remoteInfo = KyBookFmtKit;
+		};
+		F9FE66EF1C6492CC00C9543A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9FE66AC1C6490CD00C9543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9FE66B41C6490CD00C9543A;
+			remoteInfo = KyBookFmtKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F917B1EB1C67203D003053B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				F917B2241C672B8A003053B8 /* sample.tar in CopyFiles */,
+				F9A4DC681C71ED9F0095832A /* sample.fb2 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66F41C6492D700C9543A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F9FE66F31C6492D700C9543A /* KyBookFmtKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F915E6E31C68604800A94F61 /* fb2markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2markdown.swift; sourceTree = "<group>"; };
+		F915E6E51C68797600A94F61 /* NSScanner+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSScanner+Swift.swift"; sourceTree = "<group>"; };
+		F915E6E71C687F9500A94F61 /* fb2kybook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2kybook.swift; sourceTree = "<group>"; };
+		F916F76E1C65C84400BDCB45 /* KxGzipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxGzipArchive.h; path = ../source/KxGzipArchive.h; sourceTree = "<group>"; };
+		F916F76F1C65C84400BDCB45 /* KxGzipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxGzipArchive.m; path = ../source/KxGzipArchive.m; sourceTree = "<group>"; };
+		F916F7811C65DECB00BDCB45 /* KyBookFmtWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtWriter.h; path = ../source/KyBookFmtWriter.h; sourceTree = "<group>"; };
+		F916F7821C65DECB00BDCB45 /* KyBookFmtWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KyBookFmtWriter.m; path = ../source/KyBookFmtWriter.m; sourceTree = "<group>"; };
+		F916F7851C65E40000BDCB45 /* KxTarArchiveWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxTarArchiveWriter.h; path = ../source/KxTarArchiveWriter.h; sourceTree = "<group>"; };
+		F916F7861C65E40000BDCB45 /* KxTarArchiveWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxTarArchiveWriter.m; path = ../source/KxTarArchiveWriter.m; sourceTree = "<group>"; };
+		F917B1B81C66F085003053B8 /* KyBookFmtUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtUtils.h; path = ../source/KyBookFmtUtils.h; sourceTree = "<group>"; };
+		F917B1B91C66F085003053B8 /* KyBookFmtUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KyBookFmtUtils.m; path = ../source/KyBookFmtUtils.m; sourceTree = "<group>"; };
+		F917B1BC1C66FBBA003053B8 /* KxUtarURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxUtarURLProtocol.h; path = ../source/KxUtarURLProtocol.h; sourceTree = "<group>"; };
+		F917B1BD1C66FBBA003053B8 /* KxUtarURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxUtarURLProtocol.m; path = ../source/KxUtarURLProtocol.m; sourceTree = "<group>"; };
+		F917B1D91C670D80003053B8 /* BrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserController.h; sourceTree = "<group>"; };
+		F917B1DA1C670D80003053B8 /* BrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserController.m; sourceTree = "<group>"; };
+		F917B1ED1C67203D003053B8 /* fb2kybook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fb2kybook; sourceTree = BUILT_PRODUCTS_DIR; };
+		F917B1EF1C67203D003053B8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F917B1FC1C6720BA003053B8 /* KyBookFmtKitOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KyBookFmtKitOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F917B1FE1C6720BA003053B8 /* KyBookFmtKitOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KyBookFmtKitOSX.h; sourceTree = "<group>"; };
+		F917B2001C6720BA003053B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F917B2191C6726B0003053B8 /* libarchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib/libarchive.tbd; sourceTree = DEVELOPER_DIR; };
+		F917B21F1C672A77003053B8 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = samples; path = ../samples; sourceTree = "<group>"; };
+		F917B2231C672B8A003053B8 /* sample.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = sample.tar; path = ../../samples/sample.tar; sourceTree = "<group>"; };
+		F917B2251C672BD6003053B8 /* fb2package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2package.swift; sourceTree = "<group>"; };
+		F917B2341C67377D003053B8 /* fb2loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2loader.swift; sourceTree = "<group>"; };
+		F982ED5E1C6C9A460042F79B /* KoobmarkHtmlRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KoobmarkHtmlRender.h; path = ../source/KoobmarkHtmlRender.h; sourceTree = "<group>"; };
+		F982ED5F1C6C9A460042F79B /* KoobmarkHtmlRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KoobmarkHtmlRender.m; path = ../source/KoobmarkHtmlRender.m; sourceTree = "<group>"; };
+		F9865C481C6DA03400A55CAA /* fb2koobmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2koobmark.swift; sourceTree = "<group>"; };
+		F9865C571C6DB25300A55CAA /* fb2plaintext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2plaintext.swift; sourceTree = "<group>"; };
+		F9865C591C6DD97400A55CAA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F9865C5B1C6DD97C00A55CAA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		F9865C751C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxTarAssetResourceLoader.h; path = ../source/KxTarAssetResourceLoader.h; sourceTree = "<group>"; };
+		F9865C761C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxTarAssetResourceLoader.m; path = ../source/KxTarAssetResourceLoader.m; sourceTree = "<group>"; };
+		F9A4DC531C71D2EB0095832A /* KxGzipArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxGzipArchiveTests.m; sourceTree = "<group>"; };
+		F9A4DC561C71D44A0095832A /* KxTarArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxTarArchiveTests.m; sourceTree = "<group>"; };
+		F9A4DC591C71D5D50095832A /* TestsHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsHelpers.h; sourceTree = "<group>"; };
+		F9A4DC5A1C71D5D50095832A /* TestsHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestsHelpers.m; sourceTree = "<group>"; };
+		F9A4DC5F1C71DA6C0095832A /* KyBookFmtTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KyBookFmtTests.m; sourceTree = "<group>"; };
+		F9A4DC611C71DCFE0095832A /* KoobmarkParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoobmarkParserTests.m; sourceTree = "<group>"; };
+		F9A4DC631C71DDC10095832A /* KoobmarkParserText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoobmarkParserText.h; sourceTree = "<group>"; };
+		F9A4DC641C71DDC10095832A /* KoobmarkParserText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoobmarkParserText.m; sourceTree = "<group>"; };
+		F9A4DC661C71ECEF0095832A /* KyBookFmtItem_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtItem_Private.h; path = ../source/KyBookFmtItem_Private.h; sourceTree = "<group>"; };
+		F9A4DC671C71ED740095832A /* sample.fb2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sample.fb2; path = ../../samples/sample.fb2; sourceTree = "<group>"; };
+		F9EA4ED41C69BEFC00BB35AE /* fb2utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2utils.swift; sourceTree = "<group>"; };
+		F9EA4EF01C6B149700BB35AE /* KoobmarkParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = KoobmarkParser.h; path = ../source/KoobmarkParser.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F9EA4EF11C6B149700BB35AE /* KoobmarkParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = KoobmarkParser.m; path = ../source/KoobmarkParser.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F9EA4EF61C6B2C1900BB35AE /* sample.km */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sample.km; path = resources/sample.km; sourceTree = "<group>"; };
+		F9EA4EF81C6B2C7E00BB35AE /* KoobmarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoobmarkController.h; sourceTree = "<group>"; };
+		F9EA4EF91C6B2C7E00BB35AE /* KoobmarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoobmarkController.m; sourceTree = "<group>"; };
+		F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KyBookFmtKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FE66B81C6490CD00C9543A /* KyBookFmtKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KyBookFmtKit.h; sourceTree = "<group>"; };
+		F9FE66BA1C6490CD00C9543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FE66BF1C6490CD00C9543A /* KyBookFmtKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KyBookFmtKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FE66C41C6490CD00C9543A /* KyBookFmtManifestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KyBookFmtManifestTests.m; sourceTree = "<group>"; };
+		F9FE66C61C6490CD00C9543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FE66D31C64910E00C9543A /* KyBookFmtDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyBookFmtDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FE66D61C64910E00C9543A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9FE66D81C64910E00C9543A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9FE66D91C64910E00C9543A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9FE66DB1C64910E00C9543A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F9FE66DC1C64910E00C9543A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9FE66E11C64910F00C9543A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9FE66E41C64910F00C9543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9FE66E61C64910F00C9543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FE66EB1C64920700C9543A /* KyBookFmtReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtReader.h; path = ../source/KyBookFmtReader.h; sourceTree = "<group>"; };
+		F9FE66EC1C64920700C9543A /* KyBookFmtReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KyBookFmtReader.m; path = ../source/KyBookFmtReader.m; sourceTree = "<group>"; };
+		F9FE66FD1C6494A200C9543A /* archive_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_entry.h; path = ../libs/libarchive/archive_entry.h; sourceTree = "<group>"; };
+		F9FE66FE1C6494A200C9543A /* archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive.h; path = ../libs/libarchive/archive.h; sourceTree = "<group>"; };
+		F9FE67041C6497BE00C9543A /* libarchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.tbd; path = usr/lib/libarchive.tbd; sourceTree = SDKROOT; };
+		F9FE67071C64999F00C9543A /* sample.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = sample.tar; path = resources/sample.tar; sourceTree = "<group>"; };
+		F9FE67091C649C2300C9543A /* KyBookFmtItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtItem.h; path = ../source/KyBookFmtItem.h; sourceTree = "<group>"; };
+		F9FE670A1C649C2300C9543A /* KyBookFmtItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KyBookFmtItem.m; path = ../source/KyBookFmtItem.m; sourceTree = "<group>"; };
+		F9FE671C1C64B8E800C9543A /* KxTarArchiveReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxTarArchiveReader.h; path = ../source/KxTarArchiveReader.h; sourceTree = "<group>"; };
+		F9FE671D1C64B8E800C9543A /* KxTarArchiveReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxTarArchiveReader.m; path = ../source/KxTarArchiveReader.m; sourceTree = "<group>"; };
+		F9FE67261C64C86300C9543A /* KyBookFmtManifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtManifest.h; path = ../source/KyBookFmtManifest.h; sourceTree = "<group>"; };
+		F9FE67271C64C86300C9543A /* KyBookFmtManifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KyBookFmtManifest.m; path = ../source/KyBookFmtManifest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F917B1EA1C67203D003053B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F917B21D1C6726E6003053B8 /* KyBookFmtKitOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F917B1F81C6720BA003053B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9865C5C1C6DD97C00A55CAA /* libz.tbd in Frameworks */,
+				F917B21A1C6726B0003053B8 /* libarchive.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66B11C6490CD00C9543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9865C5A1C6DD97400A55CAA /* libz.tbd in Frameworks */,
+				F9FE67051C6497BE00C9543A /* libarchive.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66BC1C6490CD00C9543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FE66C01C6490CD00C9543A /* KyBookFmtKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66D01C64910E00C9543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FE66F21C6492D700C9543A /* KyBookFmtKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F917B1EE1C67203D003053B8 /* fb2kybook */ = {
+			isa = PBXGroup;
+			children = (
+				F9A4DC691C71EDDB0095832A /* test files */,
+				F917B1EF1C67203D003053B8 /* main.swift */,
+				F917B2251C672BD6003053B8 /* fb2package.swift */,
+				F917B2341C67377D003053B8 /* fb2loader.swift */,
+				F915E6E71C687F9500A94F61 /* fb2kybook.swift */,
+				F9865C571C6DB25300A55CAA /* fb2plaintext.swift */,
+				F9865C481C6DA03400A55CAA /* fb2koobmark.swift */,
+				F915E6E31C68604800A94F61 /* fb2markdown.swift */,
+				F9EA4ED41C69BEFC00BB35AE /* fb2utils.swift */,
+				F915E6E51C68797600A94F61 /* NSScanner+Swift.swift */,
+			);
+			path = fb2kybook;
+			sourceTree = "<group>";
+		};
+		F917B1FD1C6720BA003053B8 /* KyBookFmtKitOSX */ = {
+			isa = PBXGroup;
+			children = (
+				F917B1FE1C6720BA003053B8 /* KyBookFmtKitOSX.h */,
+				F917B2001C6720BA003053B8 /* Info.plist */,
+			);
+			path = KyBookFmtKitOSX;
+			sourceTree = "<group>";
+		};
+		F9A4DC691C71EDDB0095832A /* test files */ = {
+			isa = PBXGroup;
+			children = (
+				F917B2231C672B8A003053B8 /* sample.tar */,
+				F9A4DC671C71ED740095832A /* sample.fb2 */,
+			);
+			name = "test files";
+			sourceTree = "<group>";
+		};
+		F9FE66AB1C6490CD00C9543A = {
+			isa = PBXGroup;
+			children = (
+				F9FE66EA1C64914800C9543A /* source */,
+				F9FE66F71C6492FF00C9543A /* libs */,
+				F9FE66B71C6490CD00C9543A /* KyBookFmtKit */,
+				F917B1FD1C6720BA003053B8 /* KyBookFmtKitOSX */,
+				F9FE66C31C6490CD00C9543A /* KyBookFmtKitTests */,
+				F9FE66D41C64910E00C9543A /* KyBookFmtDemo */,
+				F917B1EE1C67203D003053B8 /* fb2kybook */,
+				F9FE66B61C6490CD00C9543A /* Products */,
+				F917B21F1C672A77003053B8 /* samples */,
+			);
+			sourceTree = "<group>";
+		};
+		F9FE66B61C6490CD00C9543A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */,
+				F9FE66BF1C6490CD00C9543A /* KyBookFmtKitTests.xctest */,
+				F9FE66D31C64910E00C9543A /* KyBookFmtDemo.app */,
+				F917B1ED1C67203D003053B8 /* fb2kybook */,
+				F917B1FC1C6720BA003053B8 /* KyBookFmtKitOSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9FE66B71C6490CD00C9543A /* KyBookFmtKit */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE66B81C6490CD00C9543A /* KyBookFmtKit.h */,
+				F9FE66BA1C6490CD00C9543A /* Info.plist */,
+			);
+			path = KyBookFmtKit;
+			sourceTree = "<group>";
+		};
+		F9FE66C31C6490CD00C9543A /* KyBookFmtKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE66C41C6490CD00C9543A /* KyBookFmtManifestTests.m */,
+				F9A4DC531C71D2EB0095832A /* KxGzipArchiveTests.m */,
+				F9A4DC561C71D44A0095832A /* KxTarArchiveTests.m */,
+				F9A4DC5F1C71DA6C0095832A /* KyBookFmtTests.m */,
+				F9A4DC611C71DCFE0095832A /* KoobmarkParserTests.m */,
+				F9FE66C61C6490CD00C9543A /* Info.plist */,
+				F9A4DC591C71D5D50095832A /* TestsHelpers.h */,
+				F9A4DC5A1C71D5D50095832A /* TestsHelpers.m */,
+				F9A4DC631C71DDC10095832A /* KoobmarkParserText.h */,
+				F9A4DC641C71DDC10095832A /* KoobmarkParserText.m */,
+			);
+			path = KyBookFmtKitTests;
+			sourceTree = "<group>";
+		};
+		F9FE66D41C64910E00C9543A /* KyBookFmtDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE67061C64999500C9543A /* resources */,
+				F9FE66D81C64910E00C9543A /* AppDelegate.h */,
+				F9FE66D91C64910E00C9543A /* AppDelegate.m */,
+				F9FE66DB1C64910E00C9543A /* ViewController.h */,
+				F9FE66DC1C64910E00C9543A /* ViewController.m */,
+				F917B1D91C670D80003053B8 /* BrowserController.h */,
+				F917B1DA1C670D80003053B8 /* BrowserController.m */,
+				F9EA4EF81C6B2C7E00BB35AE /* KoobmarkController.h */,
+				F9EA4EF91C6B2C7E00BB35AE /* KoobmarkController.m */,
+				F9FE66E11C64910F00C9543A /* Assets.xcassets */,
+				F9FE66E31C64910F00C9543A /* LaunchScreen.storyboard */,
+				F9FE66E61C64910F00C9543A /* Info.plist */,
+				F9FE66D51C64910E00C9543A /* Supporting Files */,
+			);
+			path = KyBookFmtDemo;
+			sourceTree = "<group>";
+		};
+		F9FE66D51C64910E00C9543A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE66D61C64910E00C9543A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9FE66EA1C64914800C9543A /* source */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE67261C64C86300C9543A /* KyBookFmtManifest.h */,
+				F9FE67271C64C86300C9543A /* KyBookFmtManifest.m */,
+				F9FE67091C649C2300C9543A /* KyBookFmtItem.h */,
+				F9FE670A1C649C2300C9543A /* KyBookFmtItem.m */,
+				F9A4DC661C71ECEF0095832A /* KyBookFmtItem_Private.h */,
+				F9FE66EB1C64920700C9543A /* KyBookFmtReader.h */,
+				F9FE66EC1C64920700C9543A /* KyBookFmtReader.m */,
+				F916F7811C65DECB00BDCB45 /* KyBookFmtWriter.h */,
+				F916F7821C65DECB00BDCB45 /* KyBookFmtWriter.m */,
+				F9FE671C1C64B8E800C9543A /* KxTarArchiveReader.h */,
+				F9FE671D1C64B8E800C9543A /* KxTarArchiveReader.m */,
+				F916F7851C65E40000BDCB45 /* KxTarArchiveWriter.h */,
+				F916F7861C65E40000BDCB45 /* KxTarArchiveWriter.m */,
+				F916F76E1C65C84400BDCB45 /* KxGzipArchive.h */,
+				F916F76F1C65C84400BDCB45 /* KxGzipArchive.m */,
+				F917B1BC1C66FBBA003053B8 /* KxUtarURLProtocol.h */,
+				F917B1BD1C66FBBA003053B8 /* KxUtarURLProtocol.m */,
+				F9865C751C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h */,
+				F9865C761C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m */,
+				F917B1B81C66F085003053B8 /* KyBookFmtUtils.h */,
+				F917B1B91C66F085003053B8 /* KyBookFmtUtils.m */,
+				F9EA4EF01C6B149700BB35AE /* KoobmarkParser.h */,
+				F9EA4EF11C6B149700BB35AE /* KoobmarkParser.m */,
+				F982ED5E1C6C9A460042F79B /* KoobmarkHtmlRender.h */,
+				F982ED5F1C6C9A460042F79B /* KoobmarkHtmlRender.m */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		F9FE66F71C6492FF00C9543A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F9865C5B1C6DD97C00A55CAA /* libz.tbd */,
+				F9865C591C6DD97400A55CAA /* libz.tbd */,
+				F917B2191C6726B0003053B8 /* libarchive.tbd */,
+				F9FE67041C6497BE00C9543A /* libarchive.tbd */,
+				F9FE66FC1C64949400C9543A /* libarchive */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		F9FE66FC1C64949400C9543A /* libarchive */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE66FE1C6494A200C9543A /* archive.h */,
+				F9FE66FD1C6494A200C9543A /* archive_entry.h */,
+			);
+			name = libarchive;
+			sourceTree = "<group>";
+		};
+		F9FE67061C64999500C9543A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA4EF61C6B2C1900BB35AE /* sample.km */,
+				F9FE67071C64999F00C9543A /* sample.tar */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F917B1F91C6720BA003053B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F917B2041C6720C5003053B8 /* KyBookFmtManifest.h in Headers */,
+				F917B2171C672107003053B8 /* archive.h in Headers */,
+				F917B2111C6720E5003053B8 /* KxTarArchiveWriter.h in Headers */,
+				F9EA4EF31C6B149700BB35AE /* KoobmarkParser.h in Headers */,
+				F917B2131C6720EE003053B8 /* KyBookFmtWriter.h in Headers */,
+				F917B2141C6720F2003053B8 /* KyBookFmtReader.h in Headers */,
+				F917B20F1C6720DA003053B8 /* KxUtarURLProtocol.h in Headers */,
+				F982ED611C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */,
+				F917B2161C6720FD003053B8 /* KyBookFmtItem.h in Headers */,
+				F9865C781C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h in Headers */,
+				F917B2101C6720DE003053B8 /* KxGzipArchive.h in Headers */,
+				F917B20E1C6720D6003053B8 /* KyBookFmtUtils.h in Headers */,
+				F9A4DC6B1C71F96C0095832A /* KyBookFmtItem_Private.h in Headers */,
+				F917B2121C6720E9003053B8 /* KxTarArchiveReader.h in Headers */,
+				F917B2181C67210A003053B8 /* archive_entry.h in Headers */,
+				F917B1FF1C6720BA003053B8 /* KyBookFmtKitOSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66B21C6490CD00C9543A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FE66ED1C64920700C9543A /* KyBookFmtReader.h in Headers */,
+				F917B1BA1C66F085003053B8 /* KyBookFmtUtils.h in Headers */,
+				F9FE67001C6494A200C9543A /* archive.h in Headers */,
+				F9EA4EF21C6B149700BB35AE /* KoobmarkParser.h in Headers */,
+				F9FE66B91C6490CD00C9543A /* KyBookFmtKit.h in Headers */,
+				F9FE671E1C64B8E800C9543A /* KxTarArchiveReader.h in Headers */,
+				F9FE66FF1C6494A200C9543A /* archive_entry.h in Headers */,
+				F982ED601C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */,
+				F917B1BE1C66FBBA003053B8 /* KxUtarURLProtocol.h in Headers */,
+				F9865C771C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h in Headers */,
+				F9FE67281C64C86300C9543A /* KyBookFmtManifest.h in Headers */,
+				F916F7701C65C84400BDCB45 /* KxGzipArchive.h in Headers */,
+				F9A4DC6A1C71F96C0095832A /* KyBookFmtItem_Private.h in Headers */,
+				F916F7871C65E40000BDCB45 /* KxTarArchiveWriter.h in Headers */,
+				F916F7831C65DECB00BDCB45 /* KyBookFmtWriter.h in Headers */,
+				F9FE670B1C649C2300C9543A /* KyBookFmtItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F917B1EC1C67203D003053B8 /* fb2kybook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F917B1F31C67203D003053B8 /* Build configuration list for PBXNativeTarget "fb2kybook" */;
+			buildPhases = (
+				F917B1E91C67203D003053B8 /* Sources */,
+				F917B1EA1C67203D003053B8 /* Frameworks */,
+				F917B1EB1C67203D003053B8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F917B21C1C6726E2003053B8 /* PBXTargetDependency */,
+			);
+			name = fb2kybook;
+			productName = fb2kybook;
+			productReference = F917B1ED1C67203D003053B8 /* fb2kybook */;
+			productType = "com.apple.product-type.tool";
+		};
+		F917B1FB1C6720BA003053B8 /* KyBookFmtKitOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F917B2011C6720BA003053B8 /* Build configuration list for PBXNativeTarget "KyBookFmtKitOSX" */;
+			buildPhases = (
+				F917B1F71C6720BA003053B8 /* Sources */,
+				F917B1F81C6720BA003053B8 /* Frameworks */,
+				F917B1F91C6720BA003053B8 /* Headers */,
+				F917B1FA1C6720BA003053B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KyBookFmtKitOSX;
+			productName = KyBookFmtKitOSX;
+			productReference = F917B1FC1C6720BA003053B8 /* KyBookFmtKitOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9FE66B41C6490CD00C9543A /* KyBookFmtKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9FE66C91C6490CD00C9543A /* Build configuration list for PBXNativeTarget "KyBookFmtKit" */;
+			buildPhases = (
+				F9FE66B01C6490CD00C9543A /* Sources */,
+				F9FE66B11C6490CD00C9543A /* Frameworks */,
+				F9FE66B21C6490CD00C9543A /* Headers */,
+				F9FE66B31C6490CD00C9543A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KyBookFmtKit;
+			productName = KyBookFmtKit;
+			productReference = F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9FE66BE1C6490CD00C9543A /* KyBookFmtKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9FE66CC1C6490CD00C9543A /* Build configuration list for PBXNativeTarget "KyBookFmtKitTests" */;
+			buildPhases = (
+				F9FE66BB1C6490CD00C9543A /* Sources */,
+				F9FE66BC1C6490CD00C9543A /* Frameworks */,
+				F9FE66BD1C6490CD00C9543A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9FE66C21C6490CD00C9543A /* PBXTargetDependency */,
+			);
+			name = KyBookFmtKitTests;
+			productName = KyBookFmtKitTests;
+			productReference = F9FE66BF1C6490CD00C9543A /* KyBookFmtKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9FE66D21C64910E00C9543A /* KyBookFmtDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9FE66E91C64910F00C9543A /* Build configuration list for PBXNativeTarget "KyBookFmtDemo" */;
+			buildPhases = (
+				F9FE66CF1C64910E00C9543A /* Sources */,
+				F9FE66D01C64910E00C9543A /* Frameworks */,
+				F9FE66D11C64910E00C9543A /* Resources */,
+				F9FE66F41C6492D700C9543A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9FE66F01C6492CC00C9543A /* PBXTargetDependency */,
+			);
+			name = KyBookFmtDemo;
+			productName = KyBookFmtDemo;
+			productReference = F9FE66D31C64910E00C9543A /* KyBookFmtDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9FE66AC1C6490CD00C9543A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Konstantin Bukreev";
+				TargetAttributes = {
+					F917B1EC1C67203D003053B8 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F917B1FB1C6720BA003053B8 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F9FE66B41C6490CD00C9543A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F9FE66BE1C6490CD00C9543A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F9FE66D21C64910E00C9543A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F9FE66AF1C6490CD00C9543A /* Build configuration list for PBXProject "KyBookFmtKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9FE66AB1C6490CD00C9543A;
+			productRefGroup = F9FE66B61C6490CD00C9543A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9FE66B41C6490CD00C9543A /* KyBookFmtKit */,
+				F917B1FB1C6720BA003053B8 /* KyBookFmtKitOSX */,
+				F9FE66BE1C6490CD00C9543A /* KyBookFmtKitTests */,
+				F9FE66D21C64910E00C9543A /* KyBookFmtDemo */,
+				F917B1EC1C67203D003053B8 /* fb2kybook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F917B1FA1C6720BA003053B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66B31C6490CD00C9543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F917B2201C672A77003053B8 /* samples in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66BD1C6490CD00C9543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A4DC551C71D3660095832A /* sample.km in Resources */,
+				F9A4DC581C71D4960095832A /* sample.tar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66D11C64910E00C9543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FE66E51C64910F00C9543A /* LaunchScreen.storyboard in Resources */,
+				F9FE67081C64999F00C9543A /* sample.tar in Resources */,
+				F9EA4EF71C6B2C1900BB35AE /* sample.km in Resources */,
+				F9FE66E21C64910F00C9543A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F917B1E91C67203D003053B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F917B2351C67377D003053B8 /* fb2loader.swift in Sources */,
+				F9865C491C6DA03400A55CAA /* fb2koobmark.swift in Sources */,
+				F915E6E61C68797600A94F61 /* NSScanner+Swift.swift in Sources */,
+				F917B1F01C67203D003053B8 /* main.swift in Sources */,
+				F917B2261C672BD6003053B8 /* fb2package.swift in Sources */,
+				F915E6E81C687F9500A94F61 /* fb2kybook.swift in Sources */,
+				F9EA4ED51C69BEFC00BB35AE /* fb2utils.swift in Sources */,
+				F9865C581C6DB25300A55CAA /* fb2plaintext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F917B1F71C6720BA003053B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F917B2071C6720D2003053B8 /* KyBookFmtReader.m in Sources */,
+				F917B2051C6720D2003053B8 /* KyBookFmtManifest.m in Sources */,
+				F9EA4EF51C6B149700BB35AE /* KoobmarkParser.m in Sources */,
+				F917B20D1C6720D2003053B8 /* KyBookFmtUtils.m in Sources */,
+				F982ED631C6C9A460042F79B /* KoobmarkHtmlRender.m in Sources */,
+				F917B20C1C6720D2003053B8 /* KxUtarURLProtocol.m in Sources */,
+				F9865C7A1C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m in Sources */,
+				F917B20B1C6720D2003053B8 /* KxGzipArchive.m in Sources */,
+				F917B20A1C6720D2003053B8 /* KxTarArchiveWriter.m in Sources */,
+				F917B2061C6720D2003053B8 /* KyBookFmtItem.m in Sources */,
+				F917B2091C6720D2003053B8 /* KxTarArchiveReader.m in Sources */,
+				F917B2081C6720D2003053B8 /* KyBookFmtWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66B01C6490CD00C9543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FE66EE1C64920700C9543A /* KyBookFmtReader.m in Sources */,
+				F916F7881C65E40000BDCB45 /* KxTarArchiveWriter.m in Sources */,
+				F9EA4EF41C6B149700BB35AE /* KoobmarkParser.m in Sources */,
+				F917B1BB1C66F085003053B8 /* KyBookFmtUtils.m in Sources */,
+				F982ED621C6C9A460042F79B /* KoobmarkHtmlRender.m in Sources */,
+				F916F7841C65DECB00BDCB45 /* KyBookFmtWriter.m in Sources */,
+				F9865C791C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m in Sources */,
+				F9FE671F1C64B8E800C9543A /* KxTarArchiveReader.m in Sources */,
+				F917B1BF1C66FBBA003053B8 /* KxUtarURLProtocol.m in Sources */,
+				F916F7711C65C84400BDCB45 /* KxGzipArchive.m in Sources */,
+				F9FE67291C64C86300C9543A /* KyBookFmtManifest.m in Sources */,
+				F9FE670C1C649C2300C9543A /* KyBookFmtItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66BB1C6490CD00C9543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A4DC651C71DDC10095832A /* KoobmarkParserText.m in Sources */,
+				F9A4DC571C71D44A0095832A /* KxTarArchiveTests.m in Sources */,
+				F9A4DC601C71DA6C0095832A /* KyBookFmtTests.m in Sources */,
+				F9FE66C51C6490CD00C9543A /* KyBookFmtManifestTests.m in Sources */,
+				F9A4DC541C71D2EB0095832A /* KxGzipArchiveTests.m in Sources */,
+				F9A4DC621C71DCFE0095832A /* KoobmarkParserTests.m in Sources */,
+				F9A4DC5B1C71D5D50095832A /* TestsHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FE66CF1C64910E00C9543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F917B1DB1C670D80003053B8 /* BrowserController.m in Sources */,
+				F9FE66DD1C64910E00C9543A /* ViewController.m in Sources */,
+				F9FE66DA1C64910E00C9543A /* AppDelegate.m in Sources */,
+				F9EA4EFA1C6B2C7E00BB35AE /* KoobmarkController.m in Sources */,
+				F9FE66D71C64910E00C9543A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F917B21C1C6726E2003053B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F917B1FB1C6720BA003053B8 /* KyBookFmtKitOSX */;
+			targetProxy = F917B21B1C6726E2003053B8 /* PBXContainerItemProxy */;
+		};
+		F9FE66C21C6490CD00C9543A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9FE66B41C6490CD00C9543A /* KyBookFmtKit */;
+			targetProxy = F9FE66C11C6490CD00C9543A /* PBXContainerItemProxy */;
+		};
+		F9FE66F01C6492CC00C9543A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9FE66B41C6490CD00C9543A /* KyBookFmtKit */;
+			targetProxy = F9FE66EF1C6492CC00C9543A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9FE66E31C64910F00C9543A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9FE66E41C64910F00C9543A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F917B1F11C67203D003053B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F917B1F21C67203D003053B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F917B2021C6720BA003053B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = KyBookFmtKitOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtKitOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F917B2031C6720BA003053B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = KyBookFmtKitOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtKitOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F9FE66C71C6490CD00C9543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9FE66C81C6490CD00C9543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9FE66CA1C6490CD00C9543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KyBookFmtKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F9FE66CB1C6490CD00C9543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KyBookFmtKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F9FE66CD1C6490CD00C9543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KyBookFmtKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9FE66CE1C6490CD00C9543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KyBookFmtKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F9FE66E71C64910F00C9543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KyBookFmtDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9FE66E81C64910F00C9543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KyBookFmtDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolyvan.KyBookFmtDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F917B1F31C67203D003053B8 /* Build configuration list for PBXNativeTarget "fb2kybook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F917B1F11C67203D003053B8 /* Debug */,
+				F917B1F21C67203D003053B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F917B2011C6720BA003053B8 /* Build configuration list for PBXNativeTarget "KyBookFmtKitOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F917B2021C6720BA003053B8 /* Debug */,
+				F917B2031C6720BA003053B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9FE66AF1C6490CD00C9543A /* Build configuration list for PBXProject "KyBookFmtKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FE66C71C6490CD00C9543A /* Debug */,
+				F9FE66C81C6490CD00C9543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9FE66C91C6490CD00C9543A /* Build configuration list for PBXNativeTarget "KyBookFmtKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FE66CA1C6490CD00C9543A /* Debug */,
+				F9FE66CB1C6490CD00C9543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9FE66CC1C6490CD00C9543A /* Build configuration list for PBXNativeTarget "KyBookFmtKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FE66CD1C6490CD00C9543A /* Debug */,
+				F9FE66CE1C6490CD00C9543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9FE66E91C64910F00C9543A /* Build configuration list for PBXNativeTarget "KyBookFmtDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FE66E71C64910F00C9543A /* Debug */,
+				F9FE66E81C64910F00C9543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9FE66AC1C6490CD00C9543A /* Project object */;
+}

@@ -1,0 +1,84 @@
+{h
+  {t2 The sample of kybook markup language 'koobmark'.}
+  {q Вышла из мрака младая с перстами пурпурными Эос; }
+}
+
+{%main
+
+  {~}
+
+  {t3 The excerpts from 'Civil Disobedience' {@https://en.wikipedia.org/wiki/Henry_David_Thoreau Henry David Thoreau} \{1849\} }
+
+  {¶ I heartily accept the {u motto}, "{i That government is best which governs least}"; and I should like to see it acted up to more rapidly and systematically. }
+
+  {¶ Carried out, it finally amounts to this, which also I believe- "{b That government is best which governs not at all}"; and when men are prepared for it, that will be the kind of government which they will have.}
+
+  {~}
+
+  {t3 Some quotation}
+  {q Когда мы смотрим вперед и вдаль и видим грядущую {?russia Россию}, то мы видим ее как национальное государство, ограждающее и обслуживающее русскую национальную культуру. После длительного революционного перерыва, после мучительного коммунистически интернационального провала {?russia Россия} вернется к свободному самоутверждению и самостоянию, найдет свой здравый инстинкт самосохранения, примирит его с своим духовным самочувствием и начнет новый период своего исторического расцвета.}
+      {%qfooter {@https://ru.wikipedia.org/wiki/Ильин,_Иван_Александрович Иван Ильин} {.name О русском национализме.}}
+
+  {~}
+
+  {%poem {t3 М. В. Ломоносов}
+
+    {%stanza
+    {¶ Лице свое скрывает день;}
+    {¶ Поля покрыла мрачна ночь;}
+    {¶ Взошла на горы чорна тень;}
+    {¶ Лучи от нас склонились прочь;}
+    {¶ Открылась бездна звезд полна;}
+    {¶ Звездам числа нет, бездне дна.}}
+
+    {%stanza
+    {¶ Песчинка как в морских волнах,}
+    {¶ Как мала искра в вечном льде,}
+    {¶ Как в сильном вихре тонкой прах,}
+    {¶ В свирепом как перо огне,}
+    {¶ Так я, в сей бездне углублен,}
+    {¶ Теряюсь, мысльми утомлен!}}
+  }
+
+  {~}
+
+  {t3 Code}
+  {;swift
+    func test(a : Int) -> Int \{
+      return a * 3
+    \}
+    let a = test(2)
+    print("\(a)")
+  }
+
+  {~}
+
+  {% {t3 Lists }
+    {+ Red
+      {* Orange }
+      {* Salmon}
+    }
+    {+ Blue
+      {* Navy}
+      {* Azure
+        {* Azure Red}
+      }
+    }
+    {+ Green}
+    {+ Yellow}
+    {+ White}
+  }
+
+  {~}
+
+  {#id1}
+  {% {t4 Some garbage {{}}}}
+  {x is unknown tag}
+  { no any tag }
+
+}
+
+{f
+  {p made by {@ru.kolyvan@google.com Kolyvan} at {i 10 Feb 2016}}
+}
+
