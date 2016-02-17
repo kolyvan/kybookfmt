@@ -44,7 +44,6 @@
 		F917B2181C67210A003053B8 /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FD1C6494A200C9543A /* archive_entry.h */; };
 		F917B21A1C6726B0003053B8 /* libarchive.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F917B2191C6726B0003053B8 /* libarchive.tbd */; };
 		F917B21D1C6726E6003053B8 /* KyBookFmtKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F917B1FC1C6720BA003053B8 /* KyBookFmtKitOSX.framework */; };
-		F917B2201C672A77003053B8 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = F917B21F1C672A77003053B8 /* samples */; };
 		F917B2241C672B8A003053B8 /* sample.tar in CopyFiles */ = {isa = PBXBuildFile; fileRef = F917B2231C672B8A003053B8 /* sample.tar */; };
 		F917B2261C672BD6003053B8 /* fb2package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917B2251C672BD6003053B8 /* fb2package.swift */; };
 		F917B2351C67377D003053B8 /* fb2loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917B2341C67377D003053B8 /* fb2loader.swift */; };
@@ -658,7 +657,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F917B2201C672A77003053B8 /* samples in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
