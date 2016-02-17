@@ -40,13 +40,43 @@
 		F917B2131C6720EE003053B8 /* KyBookFmtWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F916F7811C65DECB00BDCB45 /* KyBookFmtWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F917B2141C6720F2003053B8 /* KyBookFmtReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66EB1C64920700C9543A /* KyBookFmtReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F917B2161C6720FD003053B8 /* KyBookFmtItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE67091C649C2300C9543A /* KyBookFmtItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F917B2171C672107003053B8 /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FE1C6494A200C9543A /* archive.h */; };
-		F917B2181C67210A003053B8 /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FD1C6494A200C9543A /* archive_entry.h */; };
 		F917B21A1C6726B0003053B8 /* libarchive.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F917B2191C6726B0003053B8 /* libarchive.tbd */; };
 		F917B21D1C6726E6003053B8 /* KyBookFmtKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F917B1FC1C6720BA003053B8 /* KyBookFmtKitOSX.framework */; };
 		F917B2241C672B8A003053B8 /* sample.tar in CopyFiles */ = {isa = PBXBuildFile; fileRef = F917B2231C672B8A003053B8 /* sample.tar */; };
 		F917B2261C672BD6003053B8 /* fb2package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917B2251C672BD6003053B8 /* fb2package.swift */; };
 		F917B2351C67377D003053B8 /* fb2loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917B2341C67377D003053B8 /* fb2loader.swift */; };
+		F920CCE91C742C8400EC811E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F920CCE81C742C8400EC811E /* libiconv.tbd */; };
+		F920CD411C74461B00EC811E /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD2B1C74461B00EC811E /* archive.h */; };
+		F920CD421C74461B00EC811E /* archive_write.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD2C1C74461B00EC811E /* archive_write.c */; };
+		F920CD431C74461B00EC811E /* archive_virtual.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD2D1C74461B00EC811E /* archive_virtual.c */; };
+		F920CD441C74461B00EC811E /* archive_util.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD2E1C74461B00EC811E /* archive_util.c */; };
+		F920CD451C74461B00EC811E /* archive_string.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD2F1C74461B00EC811E /* archive_string.h */; };
+		F920CD461C74461B00EC811E /* archive_string.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD301C74461B00EC811E /* archive_string.c */; };
+		F920CD471C74461B00EC811E /* archive_string_sprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD311C74461B00EC811E /* archive_string_sprintf.c */; };
+		F920CD481C74461B00EC811E /* archive_string_composition.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD321C74461B00EC811E /* archive_string_composition.h */; };
+		F920CD491C74461B00EC811E /* archive_read.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD331C74461B00EC811E /* archive_read.c */; };
+		F920CD4A1C74461B00EC811E /* archive_read_open_filename.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD341C74461B00EC811E /* archive_read_open_filename.c */; };
+		F920CD4C1C74461B00EC811E /* archive_private.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD361C74461B00EC811E /* archive_private.h */; };
+		F920CD4D1C74461B00EC811E /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD371C74461B00EC811E /* archive_entry.h */; };
+		F920CD4E1C74461B00EC811E /* archive_entry.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD381C74461B00EC811E /* archive_entry.c */; };
+		F920CD4F1C74461B00EC811E /* archive_entry_xattr.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD391C74461B00EC811E /* archive_entry_xattr.c */; };
+		F920CD501C74461B00EC811E /* archive_entry_sparse.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD3A1C74461B00EC811E /* archive_entry_sparse.c */; };
+		F920CD511C74461B00EC811E /* archive_entry_private.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD3B1C74461B00EC811E /* archive_entry_private.h */; };
+		F920CD521C74461B00EC811E /* archive_entry_locale.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD3C1C74461B00EC811E /* archive_entry_locale.h */; };
+		F920CD531C74461B00EC811E /* archive_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD3D1C74461B00EC811E /* archive_endian.h */; };
+		F920CD541C74461B00EC811E /* archive_check_magic.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD3E1C74461B00EC811E /* archive_check_magic.c */; };
+		F920CD551C74461B00EC811E /* archive_acl.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD3F1C74461B00EC811E /* archive_acl.c */; };
+		F920CD561C74461B00EC811E /* archive_acl_private.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD401C74461B00EC811E /* archive_acl_private.h */; };
+		F920CD611C74472800EC811E /* archive_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD571C74472800EC811E /* archive_platform.h */; };
+		F920CD621C74472800EC811E /* archive_random_private.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD581C74472800EC811E /* archive_random_private.h */; };
+		F920CD631C74472800EC811E /* archive_read_private.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD591C74472800EC811E /* archive_read_private.h */; };
+		F920CD641C74472800EC811E /* archive_read_support_format_raw.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD5A1C74472800EC811E /* archive_read_support_format_raw.c */; };
+		F920CD651C74472800EC811E /* archive_read_support_format_tar.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD5B1C74472800EC811E /* archive_read_support_format_tar.c */; };
+		F920CD661C74472800EC811E /* archive_write_open_fd.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD5C1C74472800EC811E /* archive_write_open_fd.c */; };
+		F920CD671C74472800EC811E /* archive_write_open_filename.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD5D1C74472800EC811E /* archive_write_open_filename.c */; };
+		F920CD681C74472800EC811E /* archive_write_private.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD5E1C74472800EC811E /* archive_write_private.h */; };
+		F920CD691C74472800EC811E /* archive_write_set_format_pax.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD5F1C74472800EC811E /* archive_write_set_format_pax.c */; };
+		F920CD6A1C74472800EC811E /* archive_write_set_format_ustar.c in Sources */ = {isa = PBXBuildFile; fileRef = F920CD601C74472800EC811E /* archive_write_set_format_ustar.c */; };
 		F982ED601C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */ = {isa = PBXBuildFile; fileRef = F982ED5E1C6C9A460042F79B /* KoobmarkHtmlRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F982ED611C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */ = {isa = PBXBuildFile; fileRef = F982ED5E1C6C9A460042F79B /* KoobmarkHtmlRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F982ED621C6C9A460042F79B /* KoobmarkHtmlRender.m in Sources */ = {isa = PBXBuildFile; fileRef = F982ED5F1C6C9A460042F79B /* KoobmarkHtmlRender.m */; };
@@ -59,6 +89,9 @@
 		F9865C781C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F9865C751C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9865C791C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9865C761C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m */; };
 		F9865C7A1C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9865C761C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m */; };
+		F9A4A2281C7448AF00602C97 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A4A2271C7448AF00602C97 /* config.h */; };
+		F9A4A2291C7448C300602C97 /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD2B1C74461B00EC811E /* archive.h */; };
+		F9A4A22A1C7448C700602C97 /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = F920CD371C74461B00EC811E /* archive_entry.h */; };
 		F9A4DC541C71D2EB0095832A /* KxGzipArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC531C71D2EB0095832A /* KxGzipArchiveTests.m */; };
 		F9A4DC551C71D3660095832A /* sample.km in Resources */ = {isa = PBXBuildFile; fileRef = F9EA4EF61C6B2C1900BB35AE /* sample.km */; };
 		F9A4DC571C71D44A0095832A /* KxTarArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4DC561C71D44A0095832A /* KxTarArchiveTests.m */; };
@@ -89,9 +122,6 @@
 		F9FE66EE1C64920700C9543A /* KyBookFmtReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE66EC1C64920700C9543A /* KyBookFmtReader.m */; };
 		F9FE66F21C6492D700C9543A /* KyBookFmtKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */; };
 		F9FE66F31C6492D700C9543A /* KyBookFmtKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9FE66B51C6490CD00C9543A /* KyBookFmtKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F9FE66FF1C6494A200C9543A /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FD1C6494A200C9543A /* archive_entry.h */; };
-		F9FE67001C6494A200C9543A /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE66FE1C6494A200C9543A /* archive.h */; };
-		F9FE67051C6497BE00C9543A /* libarchive.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FE67041C6497BE00C9543A /* libarchive.tbd */; };
 		F9FE67081C64999F00C9543A /* sample.tar in Resources */ = {isa = PBXBuildFile; fileRef = F9FE67071C64999F00C9543A /* sample.tar */; };
 		F9FE670B1C649C2300C9543A /* KyBookFmtItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FE67091C649C2300C9543A /* KyBookFmtItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9FE670C1C649C2300C9543A /* KyBookFmtItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FE670A1C649C2300C9543A /* KyBookFmtItem.m */; };
@@ -176,6 +206,38 @@
 		F917B2231C672B8A003053B8 /* sample.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = sample.tar; path = ../../samples/sample.tar; sourceTree = "<group>"; };
 		F917B2251C672BD6003053B8 /* fb2package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2package.swift; sourceTree = "<group>"; };
 		F917B2341C67377D003053B8 /* fb2loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2loader.swift; sourceTree = "<group>"; };
+		F920CCE81C742C8400EC811E /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		F920CD2B1C74461B00EC811E /* archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive.h; path = ../vendors/libarchive/libarchive/archive.h; sourceTree = "<group>"; };
+		F920CD2C1C74461B00EC811E /* archive_write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_write.c; path = ../vendors/libarchive/libarchive/archive_write.c; sourceTree = "<group>"; };
+		F920CD2D1C74461B00EC811E /* archive_virtual.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_virtual.c; path = ../vendors/libarchive/libarchive/archive_virtual.c; sourceTree = "<group>"; };
+		F920CD2E1C74461B00EC811E /* archive_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_util.c; path = ../vendors/libarchive/libarchive/archive_util.c; sourceTree = "<group>"; };
+		F920CD2F1C74461B00EC811E /* archive_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_string.h; path = ../vendors/libarchive/libarchive/archive_string.h; sourceTree = "<group>"; };
+		F920CD301C74461B00EC811E /* archive_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_string.c; path = ../vendors/libarchive/libarchive/archive_string.c; sourceTree = "<group>"; };
+		F920CD311C74461B00EC811E /* archive_string_sprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_string_sprintf.c; path = ../vendors/libarchive/libarchive/archive_string_sprintf.c; sourceTree = "<group>"; };
+		F920CD321C74461B00EC811E /* archive_string_composition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_string_composition.h; path = ../vendors/libarchive/libarchive/archive_string_composition.h; sourceTree = "<group>"; };
+		F920CD331C74461B00EC811E /* archive_read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_read.c; path = ../vendors/libarchive/libarchive/archive_read.c; sourceTree = "<group>"; };
+		F920CD341C74461B00EC811E /* archive_read_open_filename.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_read_open_filename.c; path = ../vendors/libarchive/libarchive/archive_read_open_filename.c; sourceTree = "<group>"; };
+		F920CD361C74461B00EC811E /* archive_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_private.h; path = ../vendors/libarchive/libarchive/archive_private.h; sourceTree = "<group>"; };
+		F920CD371C74461B00EC811E /* archive_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_entry.h; path = ../vendors/libarchive/libarchive/archive_entry.h; sourceTree = "<group>"; };
+		F920CD381C74461B00EC811E /* archive_entry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_entry.c; path = ../vendors/libarchive/libarchive/archive_entry.c; sourceTree = "<group>"; };
+		F920CD391C74461B00EC811E /* archive_entry_xattr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_entry_xattr.c; path = ../vendors/libarchive/libarchive/archive_entry_xattr.c; sourceTree = "<group>"; };
+		F920CD3A1C74461B00EC811E /* archive_entry_sparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_entry_sparse.c; path = ../vendors/libarchive/libarchive/archive_entry_sparse.c; sourceTree = "<group>"; };
+		F920CD3B1C74461B00EC811E /* archive_entry_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_entry_private.h; path = ../vendors/libarchive/libarchive/archive_entry_private.h; sourceTree = "<group>"; };
+		F920CD3C1C74461B00EC811E /* archive_entry_locale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_entry_locale.h; path = ../vendors/libarchive/libarchive/archive_entry_locale.h; sourceTree = "<group>"; };
+		F920CD3D1C74461B00EC811E /* archive_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_endian.h; path = ../vendors/libarchive/libarchive/archive_endian.h; sourceTree = "<group>"; };
+		F920CD3E1C74461B00EC811E /* archive_check_magic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_check_magic.c; path = ../vendors/libarchive/libarchive/archive_check_magic.c; sourceTree = "<group>"; };
+		F920CD3F1C74461B00EC811E /* archive_acl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_acl.c; path = ../vendors/libarchive/libarchive/archive_acl.c; sourceTree = "<group>"; };
+		F920CD401C74461B00EC811E /* archive_acl_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_acl_private.h; path = ../vendors/libarchive/libarchive/archive_acl_private.h; sourceTree = "<group>"; };
+		F920CD571C74472800EC811E /* archive_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_platform.h; path = ../vendors/libarchive/libarchive/archive_platform.h; sourceTree = "<group>"; };
+		F920CD581C74472800EC811E /* archive_random_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_random_private.h; path = ../vendors/libarchive/libarchive/archive_random_private.h; sourceTree = "<group>"; };
+		F920CD591C74472800EC811E /* archive_read_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_read_private.h; path = ../vendors/libarchive/libarchive/archive_read_private.h; sourceTree = "<group>"; };
+		F920CD5A1C74472800EC811E /* archive_read_support_format_raw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_read_support_format_raw.c; path = ../vendors/libarchive/libarchive/archive_read_support_format_raw.c; sourceTree = "<group>"; };
+		F920CD5B1C74472800EC811E /* archive_read_support_format_tar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_read_support_format_tar.c; path = ../vendors/libarchive/libarchive/archive_read_support_format_tar.c; sourceTree = "<group>"; };
+		F920CD5C1C74472800EC811E /* archive_write_open_fd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_write_open_fd.c; path = ../vendors/libarchive/libarchive/archive_write_open_fd.c; sourceTree = "<group>"; };
+		F920CD5D1C74472800EC811E /* archive_write_open_filename.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_write_open_filename.c; path = ../vendors/libarchive/libarchive/archive_write_open_filename.c; sourceTree = "<group>"; };
+		F920CD5E1C74472800EC811E /* archive_write_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_write_private.h; path = ../vendors/libarchive/libarchive/archive_write_private.h; sourceTree = "<group>"; };
+		F920CD5F1C74472800EC811E /* archive_write_set_format_pax.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_write_set_format_pax.c; path = ../vendors/libarchive/libarchive/archive_write_set_format_pax.c; sourceTree = "<group>"; };
+		F920CD601C74472800EC811E /* archive_write_set_format_ustar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_write_set_format_ustar.c; path = ../vendors/libarchive/libarchive/archive_write_set_format_ustar.c; sourceTree = "<group>"; };
 		F982ED5E1C6C9A460042F79B /* KoobmarkHtmlRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KoobmarkHtmlRender.h; path = ../source/KoobmarkHtmlRender.h; sourceTree = "<group>"; };
 		F982ED5F1C6C9A460042F79B /* KoobmarkHtmlRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KoobmarkHtmlRender.m; path = ../source/KoobmarkHtmlRender.m; sourceTree = "<group>"; };
 		F9865C481C6DA03400A55CAA /* fb2koobmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fb2koobmark.swift; sourceTree = "<group>"; };
@@ -184,6 +246,7 @@
 		F9865C5B1C6DD97C00A55CAA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		F9865C751C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxTarAssetResourceLoader.h; path = ../source/KxTarAssetResourceLoader.h; sourceTree = "<group>"; };
 		F9865C761C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxTarAssetResourceLoader.m; path = ../source/KxTarAssetResourceLoader.m; sourceTree = "<group>"; };
+		F9A4A2271C7448AF00602C97 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../vendors/config.h; sourceTree = "<group>"; };
 		F9A4DC531C71D2EB0095832A /* KxGzipArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxGzipArchiveTests.m; sourceTree = "<group>"; };
 		F9A4DC561C71D44A0095832A /* KxTarArchiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxTarArchiveTests.m; sourceTree = "<group>"; };
 		F9A4DC591C71D5D50095832A /* TestsHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsHelpers.h; sourceTree = "<group>"; };
@@ -217,9 +280,6 @@
 		F9FE66E61C64910F00C9543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9FE66EB1C64920700C9543A /* KyBookFmtReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtReader.h; path = ../source/KyBookFmtReader.h; sourceTree = "<group>"; };
 		F9FE66EC1C64920700C9543A /* KyBookFmtReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KyBookFmtReader.m; path = ../source/KyBookFmtReader.m; sourceTree = "<group>"; };
-		F9FE66FD1C6494A200C9543A /* archive_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_entry.h; path = ../libs/libarchive/archive_entry.h; sourceTree = "<group>"; };
-		F9FE66FE1C6494A200C9543A /* archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive.h; path = ../libs/libarchive/archive.h; sourceTree = "<group>"; };
-		F9FE67041C6497BE00C9543A /* libarchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.tbd; path = usr/lib/libarchive.tbd; sourceTree = SDKROOT; };
 		F9FE67071C64999F00C9543A /* sample.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = sample.tar; path = resources/sample.tar; sourceTree = "<group>"; };
 		F9FE67091C649C2300C9543A /* KyBookFmtItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KyBookFmtItem.h; path = ../source/KyBookFmtItem.h; sourceTree = "<group>"; };
 		F9FE670A1C649C2300C9543A /* KyBookFmtItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KyBookFmtItem.m; path = ../source/KyBookFmtItem.m; sourceTree = "<group>"; };
@@ -251,8 +311,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F920CCE91C742C8400EC811E /* libiconv.tbd in Frameworks */,
 				F9865C5A1C6DD97400A55CAA /* libz.tbd in Frameworks */,
-				F9FE67051C6497BE00C9543A /* libarchive.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +355,59 @@
 		F917B1FD1C6720BA003053B8 /* KyBookFmtKitOSX */ = {
 			isa = PBXGroup;
 			children = (
+				F9865C5B1C6DD97C00A55CAA /* libz.tbd */,
+				F917B2191C6726B0003053B8 /* libarchive.tbd */,
 				F917B1FE1C6720BA003053B8 /* KyBookFmtKitOSX.h */,
 				F917B2001C6720BA003053B8 /* Info.plist */,
 			);
 			path = KyBookFmtKitOSX;
+			sourceTree = "<group>";
+		};
+		F920CD291C74452300EC811E /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				F920CD2A1C74452E00EC811E /* libarchive */,
+			);
+			name = vendors;
+			sourceTree = "<group>";
+		};
+		F920CD2A1C74452E00EC811E /* libarchive */ = {
+			isa = PBXGroup;
+			children = (
+				F920CD2B1C74461B00EC811E /* archive.h */,
+				F920CD371C74461B00EC811E /* archive_entry.h */,
+				F920CD571C74472800EC811E /* archive_platform.h */,
+				F920CD361C74461B00EC811E /* archive_private.h */,
+				F920CD3B1C74461B00EC811E /* archive_entry_private.h */,
+				F920CD3C1C74461B00EC811E /* archive_entry_locale.h */,
+				F920CD591C74472800EC811E /* archive_read_private.h */,
+				F920CD5E1C74472800EC811E /* archive_write_private.h */,
+				F920CD401C74461B00EC811E /* archive_acl_private.h */,
+				F920CD3D1C74461B00EC811E /* archive_endian.h */,
+				F920CD2F1C74461B00EC811E /* archive_string.h */,
+				F920CD321C74461B00EC811E /* archive_string_composition.h */,
+				F920CD581C74472800EC811E /* archive_random_private.h */,
+				F920CD381C74461B00EC811E /* archive_entry.c */,
+				F920CD3A1C74461B00EC811E /* archive_entry_sparse.c */,
+				F920CD391C74461B00EC811E /* archive_entry_xattr.c */,
+				F920CD2D1C74461B00EC811E /* archive_virtual.c */,
+				F920CD3F1C74461B00EC811E /* archive_acl.c */,
+				F920CD3E1C74461B00EC811E /* archive_check_magic.c */,
+				F920CD331C74461B00EC811E /* archive_read.c */,
+				F920CD341C74461B00EC811E /* archive_read_open_filename.c */,
+				F920CD5A1C74472800EC811E /* archive_read_support_format_raw.c */,
+				F920CD5B1C74472800EC811E /* archive_read_support_format_tar.c */,
+				F920CD2C1C74461B00EC811E /* archive_write.c */,
+				F920CD5C1C74472800EC811E /* archive_write_open_fd.c */,
+				F920CD5D1C74472800EC811E /* archive_write_open_filename.c */,
+				F920CD5F1C74472800EC811E /* archive_write_set_format_pax.c */,
+				F920CD601C74472800EC811E /* archive_write_set_format_ustar.c */,
+				F920CD301C74461B00EC811E /* archive_string.c */,
+				F920CD311C74461B00EC811E /* archive_string_sprintf.c */,
+				F920CD2E1C74461B00EC811E /* archive_util.c */,
+				F9A4A2271C7448AF00602C97 /* config.h */,
+			);
+			name = libarchive;
 			sourceTree = "<group>";
 		};
 		F9A4DC691C71EDDB0095832A /* test files */ = {
@@ -314,7 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				F9FE66EA1C64914800C9543A /* source */,
-				F9FE66F71C6492FF00C9543A /* libs */,
+				F920CD291C74452300EC811E /* vendors */,
 				F9FE66B71C6490CD00C9543A /* KyBookFmtKit */,
 				F917B1FD1C6720BA003053B8 /* KyBookFmtKitOSX */,
 				F9FE66C31C6490CD00C9543A /* KyBookFmtKitTests */,
@@ -340,6 +449,8 @@
 		F9FE66B71C6490CD00C9543A /* KyBookFmtKit */ = {
 			isa = PBXGroup;
 			children = (
+				F920CCE81C742C8400EC811E /* libiconv.tbd */,
+				F9865C591C6DD97400A55CAA /* libz.tbd */,
 				F9FE66B81C6490CD00C9543A /* KyBookFmtKit.h */,
 				F9FE66BA1C6490CD00C9543A /* Info.plist */,
 			);
@@ -423,27 +534,6 @@
 			name = source;
 			sourceTree = "<group>";
 		};
-		F9FE66F71C6492FF00C9543A /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				F9865C5B1C6DD97C00A55CAA /* libz.tbd */,
-				F9865C591C6DD97400A55CAA /* libz.tbd */,
-				F917B2191C6726B0003053B8 /* libarchive.tbd */,
-				F9FE67041C6497BE00C9543A /* libarchive.tbd */,
-				F9FE66FC1C64949400C9543A /* libarchive */,
-			);
-			name = libs;
-			sourceTree = "<group>";
-		};
-		F9FE66FC1C64949400C9543A /* libarchive */ = {
-			isa = PBXGroup;
-			children = (
-				F9FE66FE1C6494A200C9543A /* archive.h */,
-				F9FE66FD1C6494A200C9543A /* archive_entry.h */,
-			);
-			name = libarchive;
-			sourceTree = "<group>";
-		};
 		F9FE67061C64999500C9543A /* resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,20 +551,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F917B2041C6720C5003053B8 /* KyBookFmtManifest.h in Headers */,
-				F917B2171C672107003053B8 /* archive.h in Headers */,
+				F9A4A2291C7448C300602C97 /* archive.h in Headers */,
 				F917B2111C6720E5003053B8 /* KxTarArchiveWriter.h in Headers */,
 				F9EA4EF31C6B149700BB35AE /* KoobmarkParser.h in Headers */,
 				F917B2131C6720EE003053B8 /* KyBookFmtWriter.h in Headers */,
 				F917B2141C6720F2003053B8 /* KyBookFmtReader.h in Headers */,
 				F917B20F1C6720DA003053B8 /* KxUtarURLProtocol.h in Headers */,
 				F982ED611C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */,
+				F9A4A22A1C7448C700602C97 /* archive_entry.h in Headers */,
 				F917B2161C6720FD003053B8 /* KyBookFmtItem.h in Headers */,
 				F9865C781C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h in Headers */,
 				F917B2101C6720DE003053B8 /* KxGzipArchive.h in Headers */,
 				F917B20E1C6720D6003053B8 /* KyBookFmtUtils.h in Headers */,
 				F9A4DC6B1C71F96C0095832A /* KyBookFmtItem_Private.h in Headers */,
 				F917B2121C6720E9003053B8 /* KxTarArchiveReader.h in Headers */,
-				F917B2181C67210A003053B8 /* archive_entry.h in Headers */,
 				F917B1FF1C6720BA003053B8 /* KyBookFmtKitOSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,20 +574,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FE66ED1C64920700C9543A /* KyBookFmtReader.h in Headers */,
+				F920CD4C1C74461B00EC811E /* archive_private.h in Headers */,
 				F917B1BA1C66F085003053B8 /* KyBookFmtUtils.h in Headers */,
-				F9FE67001C6494A200C9543A /* archive.h in Headers */,
+				F920CD4D1C74461B00EC811E /* archive_entry.h in Headers */,
+				F920CD681C74472800EC811E /* archive_write_private.h in Headers */,
+				F920CD611C74472800EC811E /* archive_platform.h in Headers */,
+				F920CD621C74472800EC811E /* archive_random_private.h in Headers */,
 				F9EA4EF21C6B149700BB35AE /* KoobmarkParser.h in Headers */,
+				F920CD561C74461B00EC811E /* archive_acl_private.h in Headers */,
+				F920CD531C74461B00EC811E /* archive_endian.h in Headers */,
 				F9FE66B91C6490CD00C9543A /* KyBookFmtKit.h in Headers */,
 				F9FE671E1C64B8E800C9543A /* KxTarArchiveReader.h in Headers */,
-				F9FE66FF1C6494A200C9543A /* archive_entry.h in Headers */,
 				F982ED601C6C9A460042F79B /* KoobmarkHtmlRender.h in Headers */,
 				F917B1BE1C66FBBA003053B8 /* KxUtarURLProtocol.h in Headers */,
 				F9865C771C6DF4AE00A55CAA /* KxTarAssetResourceLoader.h in Headers */,
 				F9FE67281C64C86300C9543A /* KyBookFmtManifest.h in Headers */,
+				F920CD411C74461B00EC811E /* archive.h in Headers */,
+				F920CD451C74461B00EC811E /* archive_string.h in Headers */,
+				F920CD481C74461B00EC811E /* archive_string_composition.h in Headers */,
 				F916F7701C65C84400BDCB45 /* KxGzipArchive.h in Headers */,
+				F9A4A2281C7448AF00602C97 /* config.h in Headers */,
+				F920CD631C74472800EC811E /* archive_read_private.h in Headers */,
 				F9A4DC6A1C71F96C0095832A /* KyBookFmtItem_Private.h in Headers */,
+				F920CD511C74461B00EC811E /* archive_entry_private.h in Headers */,
 				F916F7871C65E40000BDCB45 /* KxTarArchiveWriter.h in Headers */,
 				F916F7831C65DECB00BDCB45 /* KyBookFmtWriter.h in Headers */,
+				F920CD521C74461B00EC811E /* archive_entry_locale.h in Headers */,
 				F9FE670B1C649C2300C9543A /* KyBookFmtItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,17 +824,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FE66EE1C64920700C9543A /* KyBookFmtReader.m in Sources */,
+				F920CD471C74461B00EC811E /* archive_string_sprintf.c in Sources */,
+				F920CD4F1C74461B00EC811E /* archive_entry_xattr.c in Sources */,
+				F920CD651C74472800EC811E /* archive_read_support_format_tar.c in Sources */,
 				F916F7881C65E40000BDCB45 /* KxTarArchiveWriter.m in Sources */,
+				F920CD421C74461B00EC811E /* archive_write.c in Sources */,
+				F920CD431C74461B00EC811E /* archive_virtual.c in Sources */,
+				F920CD4E1C74461B00EC811E /* archive_entry.c in Sources */,
 				F9EA4EF41C6B149700BB35AE /* KoobmarkParser.m in Sources */,
 				F917B1BB1C66F085003053B8 /* KyBookFmtUtils.m in Sources */,
+				F920CD691C74472800EC811E /* archive_write_set_format_pax.c in Sources */,
+				F920CD541C74461B00EC811E /* archive_check_magic.c in Sources */,
+				F920CD501C74461B00EC811E /* archive_entry_sparse.c in Sources */,
+				F920CD641C74472800EC811E /* archive_read_support_format_raw.c in Sources */,
+				F920CD4A1C74461B00EC811E /* archive_read_open_filename.c in Sources */,
 				F982ED621C6C9A460042F79B /* KoobmarkHtmlRender.m in Sources */,
+				F920CD491C74461B00EC811E /* archive_read.c in Sources */,
 				F916F7841C65DECB00BDCB45 /* KyBookFmtWriter.m in Sources */,
+				F920CD661C74472800EC811E /* archive_write_open_fd.c in Sources */,
+				F920CD671C74472800EC811E /* archive_write_open_filename.c in Sources */,
+				F920CD441C74461B00EC811E /* archive_util.c in Sources */,
+				F920CD6A1C74472800EC811E /* archive_write_set_format_ustar.c in Sources */,
 				F9865C791C6DF4AE00A55CAA /* KxTarAssetResourceLoader.m in Sources */,
+				F920CD461C74461B00EC811E /* archive_string.c in Sources */,
 				F9FE671F1C64B8E800C9543A /* KxTarArchiveReader.m in Sources */,
 				F917B1BF1C66FBBA003053B8 /* KxUtarURLProtocol.m in Sources */,
 				F916F7711C65C84400BDCB45 /* KxGzipArchive.m in Sources */,
 				F9FE67291C64C86300C9543A /* KyBookFmtManifest.m in Sources */,
 				F9FE670C1C649C2300C9543A /* KyBookFmtItem.m in Sources */,
+				F920CD551C74461B00EC811E /* archive_acl.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -958,6 +1078,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"HAVE_CONFIG_H=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = KyBookFmtKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -974,6 +1099,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
 				INFOPLIST_FILE = KyBookFmtKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
