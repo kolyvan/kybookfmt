@@ -41,12 +41,14 @@ typedef NS_ENUM(NSUInteger, KyBookFmtItemKind) {
     KyBookFmtItemKindToc,
     KyBookFmtItemKindText,
     KyBookFmtItemKindKoobmark,
-    // KyBookFmtItemKindHTML, ?
+    KyBookFmtItemKindHTML,
     KyBookFmtItemKindImage,
     KyBookFmtItemKindMedia, // apng, gif, webm
     KyBookFmtItemKindSVG,
     KyBookFmtItemKindAudio,    
     KyBookFmtItemKindFont,
+    KyBookFmtItemKindCSS,
+    KyBookFmtItemKindSubtitle,    
     KyBookFmtItemKindUnsupported,
 };
 

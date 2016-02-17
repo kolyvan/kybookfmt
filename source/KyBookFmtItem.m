@@ -84,6 +84,12 @@
                 
                 _kind = KyBookFmtItemKindKoobmark;
                 
+            } else if ([pathExt isEqualToString:@"html"] ||
+                       [pathExt isEqualToString:@"xhtml"] ||
+                       [pathExt isEqualToString:@"htm"])
+            {
+                _kind = KyBookFmtItemKindHTML;
+                
             } else if ([pathExt isEqualToString:@"png"] ||
                        [pathExt isEqualToString:@"jpg"] ||
                        [pathExt isEqualToString:@"jpeg"] ||
@@ -113,6 +119,14 @@
                        [pathExt isEqualToString:@"otf"])
             {
                 _kind = KyBookFmtItemKindFont;
+                
+            } else if ([pathExt isEqualToString:@"css"]) {
+                
+                _kind = KyBookFmtItemKindCSS;
+                
+            } else if ([pathExt isEqualToString:@"srt"]) {
+                
+                _kind = KyBookFmtItemKindSubtitle;
                 
             } else {
                 
@@ -176,26 +190,29 @@
             return @"application/json";
             
         case KyBookFmtItemKindText:
-            return @"plain/text";
+            return @"text/plain";
             
         case KyBookFmtItemKindKoobmark:
             return @"application/x-koobmark";
+        
+        case KyBookFmtItemKindHTML:
+            return [@"text/" stringByAppendingString:_path.pathExtension.lowercaseString];
             
         case KyBookFmtItemKindImage:
-            return [@"image/" stringByAppendingString:_path.pathExtension];
+            return [@"image/" stringByAppendingString:_path.pathExtension.lowercaseString];
             
         case KyBookFmtItemKindMedia:
             if ([_path.pathExtension.lowercaseString isEqualToString:@"webm"]) {
                 return @"video/webm";
             } else {
-                return [@"image/" stringByAppendingString:_path.pathExtension];
+                return [@"image/" stringByAppendingString:_path.pathExtension.lowercaseString];
             }
             
         case KyBookFmtItemKindSVG:
             return @"image/svg+xml";
             
         case KyBookFmtItemKindAudio:
-            return [@"audio/" stringByAppendingString:_path.pathExtension];
+            return [@"audio/" stringByAppendingString:_path.pathExtension.lowercaseString];
             
         case KyBookFmtItemKindFont:
             
@@ -204,7 +221,13 @@
             } else if ([_path.pathExtension.lowercaseString isEqualToString:@"otf"]) {
                 return @"application/x-font-opentype";
             }
-            
+        
+        case KyBookFmtItemKindCSS:
+            return @"text/css";
+        
+        case KyBookFmtItemKindSubtitle:
+            return [@"text/" stringByAppendingString:_path.pathExtension.lowercaseString];
+        
         default:
             break;
     }
