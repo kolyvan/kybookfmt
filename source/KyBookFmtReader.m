@@ -150,7 +150,7 @@
 {
     id val = [self valueOfItemKind:KyBookFmtItemKindGuide error:error];
     if (!val ||
-        ![val isKindOfClass:[NSDictionary class]] ||
+        ![val isKindOfClass:[NSArray class]] ||
         ![KyBookFmtUtils probeCollection:val itemClass:[NSDictionary class]])
     {
         return nil;
