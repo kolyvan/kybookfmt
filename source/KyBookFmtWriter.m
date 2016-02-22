@@ -98,6 +98,12 @@
     return [self writeJsonValue:toc path:@"_toc.json" error:error];
 }
 
+- (BOOL) writeGuide:(NSArray *)guide
+              error:(NSError **)error
+{
+    return [self writeJsonValue:guide path:@"_guide.json" error:error];
+}
+
 - (BOOL) writeData:(NSData *)data
               path:(NSString *)path
              error:(NSError **)error

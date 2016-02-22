@@ -55,6 +55,7 @@
 - (nullable KyBookFmtManifest *) readManifest:(NSError * _Nullable * _Nullable)error;
 - (nullable NSArray<NSString *> *) readIndex:(NSError * _Nullable * _Nullable)error;
 - (nullable NSArray<NSDictionary *> *) readToc:(NSError * _Nullable * _Nullable)error;
+- (nullable NSArray<NSDictionary *> *) readGuide:(NSError * _Nullable * _Nullable)error;
 - (nullable NSData *) readDataOfItem:(nonnull NSString *)path error:(NSError * _Nullable * _Nullable)error;
 - (nullable NSString *) readTextOfItem:(nonnull NSString *)path error:(NSError * _Nullable * _Nullable)error;
 

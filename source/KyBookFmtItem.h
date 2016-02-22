@@ -39,6 +39,7 @@ typedef NS_ENUM(NSUInteger, KyBookFmtItemKind) {
     KyBookFmtItemKindManifest,
     KyBookFmtItemKindIndex,
     KyBookFmtItemKindToc,
+    KyBookFmtItemKindGuide,
     KyBookFmtItemKindText,
     KyBookFmtItemKindKoobmark,
     KyBookFmtItemKindHTML,

@@ -67,6 +67,18 @@ class FB2KyBook {
             self.path = path
             self.content = content
         }
+
+        func gzipContent() -> Chapter {
+
+            if (self.content.length > 256) {
+                if let data = KxGzipArchive.gzipData(self.content) {
+                    if (data.length < self.content.length) {
+                        return Chapter(title: self.title, path: self.path + ".gz", content: data)
+                    }
+                }
+            }
+            return self
+        }
     }
     
     class BuilderChapters {
@@ -123,10 +135,10 @@ class FB2KyBook {
         let manifest = self.manifestFromPackage(package)
         try writer.writeManifest(manifest)
                 
-        var (chapters, tocMap) = self.buildChapters(package, opt: opt)
+        var (chapters, notesList, tocMap) = self.buildChapters(package, opt: opt)
         
         var index = [String]()
-        //var toc = [[NSString : NSString]]()
+        var guide = [[String : String]]()
         
         if let coverpages = self.buildCoverpages(package) {
             index.appendContentsOf(coverpages)
@@ -152,24 +164,18 @@ class FB2KyBook {
             index.append(path)
         }
         
-        
         if (opt.gzipChapter) {
             
-            chapters = chapters.map{ (p) -> Chapter in
-                
-                if (p.content.length > 256) {
-                    if let data = KxGzipArchive.gzipData(p.content) {
-                        if (data.length < p.content.length) {
-                            return Chapter(title: p.title, path: p.path + ".gz", content: data)
-                        }
-                    }
-                }
-                return p
-            }
+            chapters = chapters.map{ $0.gzipContent() }
+            notesList = notesList.map{ $0.gzipContent() }
         }
         
         for chapter in chapters {
             index.append(chapter.path)
+        }
+        
+        for notes in notesList {
+            guide.append([ "path" : notes.path, "title" : notes.title, "kind" : "notes" ])
         }
 
         var toc = self.buildToc(package, tocMap: tocMap)
@@ -180,12 +186,20 @@ class FB2KyBook {
         try writer.writeIndex(index)
         try writer.writeToc(toc)
         
+        if !guide.isEmpty {
+            try writer.writeGuide(guide)
+        }
+        
         if let titlePage = titlePage {
             try writer.writeData(titlePage.content, path: titlePage.path)
         }
         
         for chapter in chapters {
             try writer.writeData(chapter.content, path: chapter.path)
+        }
+        
+        for notes in notesList {
+            try writer.writeData(notes.content, path: notes.path)
         }
         
         for binary in package.binaries {
@@ -253,7 +267,7 @@ class FB2KyBook {
         return manifest
     }
     
-    static func buildChapters(package: FB2Package, opt: Options) -> ([Chapter], [String : String]) {
+    static func buildChapters(package: FB2Package, opt: Options) -> ([Chapter], [Chapter], [String : String]) {
         
         var chapters = [Chapter]()
         var notes = [Chapter]()
@@ -264,7 +278,7 @@ class FB2KyBook {
         
         for body in package.bodies {
             
-            if body.name == "notes" {
+            if body.name == "notes" || body.name == "comments" {
                 
                 let title = body.title?.asString() ?? "Notes \(notesNo)"
                 let path = "notes_\(notesNo)." + opt.chapterPathExt
@@ -320,11 +334,7 @@ class FB2KyBook {
             }
         }
         
-        if !notes.isEmpty {
-            chapters.appendContentsOf(notes)
-        }
-        
-        return (chapters, tocMap)
+        return (chapters, notes, tocMap)
     }
     
     static func buildChapter(body: FB2Body, title: String, path: String, opt: Options) -> Chapter? {

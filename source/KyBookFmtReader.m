@@ -146,6 +146,18 @@
     return val;
 }
 
+- (NSArray<NSDictionary *> *) readGuide:(NSError **)error
+{
+    id val = [self valueOfItemKind:KyBookFmtItemKindGuide error:error];
+    if (!val ||
+        ![val isKindOfClass:[NSDictionary class]] ||
+        ![KyBookFmtUtils probeCollection:val itemClass:[NSDictionary class]])
+    {
+        return nil;
+    }
+    return val;
+}
+
 - (NSData *) readDataOfItem:(NSString *)path
                       error:(NSError **)error
 {

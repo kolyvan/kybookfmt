@@ -68,6 +68,10 @@
             
             _kind = KyBookFmtItemKindToc;
             
+        } else if ([name isEqualToString:@"_guide.json"]) {
+            
+            _kind = KyBookFmtItemKindGuide;
+            
         } else {
             
             NSString *pathExt = name.pathExtension;
@@ -187,6 +191,7 @@
         case KyBookFmtItemKindManifest:
         case KyBookFmtItemKindIndex:
         case KyBookFmtItemKindToc:
+        case KyBookFmtItemKindGuide:
             return @"application/json";
             
         case KyBookFmtItemKindText:

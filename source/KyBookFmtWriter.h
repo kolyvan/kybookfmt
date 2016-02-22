@@ -54,6 +54,9 @@
 - (BOOL) writeToc:(nonnull NSArray *)toc
             error:(NSError * _Nullable * _Nullable)error;
 
+- (BOOL) writeGuide:(nonnull NSArray *)guide
+              error:(NSError * _Nullable * _Nullable)error;
+
 - (BOOL) writeData:(nonnull NSData *)data
               path:(nonnull NSString *)path
              error:(NSError * _Nullable * _Nullable)error;

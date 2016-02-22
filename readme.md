@@ -25,6 +25,7 @@ The typical structure of TARBALL is:
     _manifest.json
     _index.json
     _toc.json
+    _guide.json
     cover.jpg
     chapter1.km.gz
     chapter2.km.gz
