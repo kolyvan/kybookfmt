@@ -149,7 +149,7 @@ class FB2Koobmark {
             }
         }
         
-        return buffer
+        return buffer.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
     }
     
     static func mkString(section: FB2Section, isNote: Bool) -> String? {
@@ -279,7 +279,7 @@ class FB2Koobmark {
         }
 
         if buffer.isEmpty {
-            return nil;
+            return nil
         }
         
         return "{%titlepage " + buffer + "}\n"
@@ -287,6 +287,10 @@ class FB2Koobmark {
 
     static func escapeText(text: String) -> String {
         
+        if text.isEmpty {
+            return text
+        }
+
         let charset = self.backslashEscapedCharacterSet
         let scanner = NSScanner(string: text)
         scanner.charactersToBeSkipped = nil

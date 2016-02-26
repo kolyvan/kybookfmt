@@ -85,7 +85,7 @@ struct FB2Utils {
         if !needTrim {
             return text;
         }
-        
+
         var buffer = ""
         
         scanner.scanLocation = 0
@@ -98,7 +98,7 @@ struct FB2Utils {
                 buffer += s
             }
         }
-        
+
         return buffer
     }
 }
