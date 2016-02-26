@@ -77,9 +77,12 @@ class FB2Koobmark {
             
         } else if let p = node as? FB2Link {
             
+            let name = p.type == "note" ? "?" : "@"
             let s = self.mkStringTree(p.tree, opt:opt)
-            if !s.isEmpty {
-                text = "{@" + p.href + " " + s + "}"
+            if s.isEmpty {
+                text = "{" + name + p.href +  "}"
+            } else {
+                text = "{" + name + p.href + " " + s + "}"
             }
             
         } else if let p = node as? FB2Style {

@@ -124,7 +124,7 @@ class FB2Style : FB2Text {
     }
 }
 
-class FB2Link : FB2NodeWithTree {
+class FB2Link : FB2Text {
 
     let href : String
     let type : String?
