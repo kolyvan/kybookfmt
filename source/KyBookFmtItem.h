@@ -44,9 +44,8 @@ typedef NS_ENUM(NSUInteger, KyBookFmtItemKind) {
     KyBookFmtItemKindKoobmark,
     KyBookFmtItemKindHTML,
     KyBookFmtItemKindImage,
-    KyBookFmtItemKindMedia, // apng, gif, webm
     KyBookFmtItemKindSVG,
-    KyBookFmtItemKindAudio,    
+    KyBookFmtItemKindAudio,
     KyBookFmtItemKindFont,
     KyBookFmtItemKindCSS,
     KyBookFmtItemKindSubtitle,    

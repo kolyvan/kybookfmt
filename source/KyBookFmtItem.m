@@ -97,15 +97,11 @@
             } else if ([pathExt isEqualToString:@"png"] ||
                        [pathExt isEqualToString:@"jpg"] ||
                        [pathExt isEqualToString:@"jpeg"] ||
-                       [pathExt isEqualToString:@"jp2"])
+                       [pathExt isEqualToString:@"jp2"] ||
+                       [pathExt isEqualToString:@"gif"] ||
+                       [pathExt isEqualToString:@"webp"] )
             {
                 _kind = KyBookFmtItemKindImage;
-                
-            } else if ([pathExt isEqualToString:@"gif"] ||
-                       [pathExt isEqualToString:@"webm"] ||
-                       [pathExt isEqualToString:@"apng"])
-            {
-                _kind = KyBookFmtItemKindMedia;
                 
             } else if ([pathExt isEqualToString:@"svg"])
             {
@@ -205,14 +201,7 @@
             
         case KyBookFmtItemKindImage:
             return [@"image/" stringByAppendingString:_path.pathExtension.lowercaseString];
-            
-        case KyBookFmtItemKindMedia:
-            if ([_path.pathExtension.lowercaseString isEqualToString:@"webm"]) {
-                return @"video/webm";
-            } else {
-                return [@"image/" stringByAppendingString:_path.pathExtension.lowercaseString];
-            }
-            
+                        
         case KyBookFmtItemKindSVG:
             return @"image/svg+xml";
             
