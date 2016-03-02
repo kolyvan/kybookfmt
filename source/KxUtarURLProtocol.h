@@ -34,4 +34,5 @@
 #import <Foundation/Foundation.h>
 
 @interface KxUtarURLProtocol : NSURLProtocol
++ (void) registerUtarURLProtocol;
 @end

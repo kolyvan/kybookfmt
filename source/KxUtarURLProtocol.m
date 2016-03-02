@@ -45,6 +45,14 @@
 
 @implementation KxUtarURLProtocol
 
++ (void) registerUtarURLProtocol
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSURLProtocol registerClass:[KxUtarURLProtocol class]];
+    });
+}
+
 + (BOOL)canInitWithRequest:(NSURLRequest *)request
 {
     return [request.URL.scheme isEqualToString:@"utar"];

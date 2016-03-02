@@ -27,7 +27,7 @@
     
     [self copySamples];
     
-    [NSURLProtocol registerClass:[KxUtarURLProtocol class]];
+    [KxUtarURLProtocol registerUtarURLProtocol];
         
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
